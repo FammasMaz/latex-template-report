@@ -1,0 +1,29 @@
+# Images and codes
+snippets/*
+
+# Auxiliary files latex
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.maf
+*.mtc*
+*.out
+*.xml
+*.gz
+
+# mini toc
+*.toc
+# bibliography
+# presentations
+*.snm
+*.nav
+
+# pdf
+
+# DS_store
+.DS_Store
