@@ -1,8 +1,8 @@
-\documentclass[11pt]{report}
+\documentclass[12pt,a4paper]{report}
 \input{template_report.tex}
 
-
-\addbibresource{Rail19.bib}
+% graphics and bib path
+\addbibresource{bib/Rail19.bib}
 \graphicspath{{plots/}}
 
 \title{XFEM Report}
@@ -10,15 +10,13 @@
 \date{September 2023}
 
 \begin{document}
-
-
 \dominitoc
 
 % Title Page
 \begin{titlepage}
     \begin{center}
         \vspace*{1cm}
-            
+             
         \Huge
         \textbf{Internship Report}
             
@@ -69,12 +67,10 @@
 
 
 % add chapters
-%\chapter{Bibliography review}
-%\minitoc
-%\pagebreak
-%\input{Chapitre1_rev.tex}
-%\label{c:introduction}
-
+\chapter{Introduction}
+\minitoc
+\pagebreak
+%
 
 % add conclusions
 %\chapter*{Conclusions}
@@ -85,9 +81,6 @@
 
 % add Biblio
 
-%print Bibliography
-%\printbibliography
-%\pagebreak
-
+\printbibliography
 
 \end{document}

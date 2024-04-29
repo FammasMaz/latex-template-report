@@ -1,79 +1,56 @@
+%\documentclass[12pt,a4paper]{report}
 \usepackage[utf8]{inputenc}
-\usepackage[a4paper,width=160mm,top=25mm,bottom=25mm]{geometry}
-\usepackage[skip=8pt plus1pt, indent=0pt]{parskip}
-\usepackage{minitoc}
+\usepackage[T1]{fontenc} 
+\usepackage[width=160mm,top=25mm,bottom=25mm]{geometry}
+\usepackage{parskip}
 \usepackage{graphicx}
-\usepackage{grffile}
-\usepackage{fancyhdr}
-\usepackage{hyperref}
+\graphicspath{{plots/}} 
+
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{xcolor}
-\usepackage{xfrac}
-\usepackage{physics}
 
-%Code Snippets
-\usepackage{listings}
-
-\usepackage{float}
-
-%tikzpicture
-\usepackage{tikz}
-\usepackage{scalerel}
-\usepackage{pict2e}
-\usepackage{tkz-euclide}
-\usetikzlibrary{calc}
-\usetikzlibrary{patterns,arrows.meta}
-\usetikzlibrary{shadows}
-\usetikzlibrary{external}
-
-%pgfplots
-\usepackage{pgfplots}
-\pgfplotsset{compat=newest}
-\usepgfplotslibrary{statistics}
-\usepgfplotslibrary{fillbetween}
-
-
-% Add Bib
-\usepackage[backend=biber,sorting=none]{biblatex}
-
-\usepackage{import}
-\usepackage{pdfpages}
-\usepackage{transparent}
-\usepackage{xcolor}
-
-%% Algorithm
-\usepackage{algpseudocode}
-\usepackage[]{algorithm}
-
-%% Autoref
-\renewcommand{\figureautorefname}{figure}
-\renewcommand{\tableautorefname}{table}
-\renewcommand{\equationautorefname}{equation}
-\renewcommand{\sectionautorefname}{section}
-\renewcommand{\subsectionautorefname}{section}
-\renewcommand{\subsubsectionautorefname}{section}
-
-\pdfsuppresswarningpagegroup=1
-
-%Subplots
-% Images
-\usepackage{caption}        % Enables controlling the look and feel of captions, see package documentation
-\usepackage{subcaption}     % Recommended when making sub-figures
-\usepackage[nottoc]{tocbibind}  % Includes Bibliography, Index, list of Listing etc. to table of contents
-\newcommand{\source}[1]{\vspace{-4pt} \caption*{\hfill \footnotesize{Source: {#1}} } }   % Easily insert sources in images
-\usepackage{graphicx}   % Handle images
-\usepackage{wrapfig}    % Wrap text around images
-\usepackage{float}      % Force image location using "H"
-\usepackage{url}        % Insert urls
-\urlstyle{sf}           % Set url-style as "sans-serif". Other options are e.g. "same" or "rm"
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}   % Ruler
-
-% Fancy Setup
-\pagestyle{fancy}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
-\fancyhead[L]{\makebox[0.8\textwidth][l]{\textsc{\rightmark}}} % truncated section name on left side
-\fancyfoot[C]{\thepage} % page number at bottom
-\setlength{\headheight}{14.5pt}
+\fancyhead[L]{\makebox[0.8\textwidth][l]{\textsc{\rightmark}}}
+\fancyfoot[C]{\thepage} 
+\setlength{\headheight}{15pt} 
+
+\usepackage{hyperref}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\newcommand{\source}[1]{\vspace{-4pt}\caption*{\hfill\footnotesize{Source: #1}}}
+
+\usepackage{url}
+\urlstyle{sf}
+
+\usepackage{listings}
+
+\usepackage{tikz}
+\usetikzlibrary{calc, patterns, arrows.meta, shadows}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\usepackage[backend=biber, sorting=none]{biblatex}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage{import}
+\usepackage[nottoc]{tocbibind}
+\usepackage{minitoc}
+% filter some warnings
+\usepackage{silence}
+
+\WarningFilter{minitoc(hints)}{W0024}
+
+\renewcommand{\figureautorefname}{Figure}
+\renewcommand{\tableautorefname}{Table}
+\renewcommand{\equationautorefname}{Equation}
+\renewcommand{\sectionautorefname}{Section}
+\renewcommand{\subsectionautorefname}{Section}
+\renewcommand{\subsubsectionautorefname}{Section}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
