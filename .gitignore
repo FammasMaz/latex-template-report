@@ -1,6 +1,6 @@
 # Images and codes
 snippets/*
-
+out*
 # Auxiliary files latex
 *.aux
 *.bbl
